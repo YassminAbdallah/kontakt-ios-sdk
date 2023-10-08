@@ -16,10 +16,11 @@ Pod::Spec.new do |s|
   # s.tvos.frameworks         = "UIKit", "Foundation", "SystemConfiguration", "MobileCoreServices", "CoreLocation", "CoreBluetooth"
   # s.osx.frameworks          = "AppKit", "Foundation", "SystemConfiguration", "CoreServices", "CoreBluetooth"
 
-  s.source = {
-    :http    => "http://omg.kontakt.io.s3.amazonaws.com/ios/builds/kontakt-ios-sdk-#{s.version.to_s}.zip",
-    :flatten => true
-  }
+  #s.source = {
+ #   :http    => "http://omg.kontakt.io.s3.amazonaws.com/ios/builds/kontakt-ios-sdk-#{s.version.to_s}.zip",
+ #   :flatten => true
+ # }
+   s.source = { :git => 'https://github.com/YassminAbdallah/kontakt-ios-sdk.git', :tag => "#{s.version}" }
 
   s.ios.vendored_frameworks = "Cocoapods/KontaktSDK/iOS/KontaktSDK.xcframework"
 
