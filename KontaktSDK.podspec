@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
  # }
    s.source = { :git => 'https://github.com/YassminAbdallah/kontakt-ios-sdk.git', :tag => "#{s.version}" }
 
-   s.ios.vendored_frameworks = "Cocoapods/KontaktSDK/iOS/KontaktSDK.xcframework"
+   s.ios.vendored_frameworks = "KontaktSDK/iOS/KontaktSDK.xcframework"
 
   # s.tvos.vendored_frameworks = "Cocoapods/tvOS/KontaktSDK.framework"
 
